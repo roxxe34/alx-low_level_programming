@@ -11,4 +11,5 @@ ssize_t len = sizeof(message) - 1;
 ssize_t n = write(STDERR_FILENO, message, len);
 if (n != len)
 return(1);
+return(0);
 }
