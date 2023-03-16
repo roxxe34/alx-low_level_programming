@@ -6,10 +6,11 @@
  */
 int main(void)
 {
-const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-ssize_t len = 0;
-while (message[len] != '\0')
-len++;
+char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+ssize_t len = sizeof(message) - 1;
 ssize_t n = write(STDERR_FILENO, message, len);
-return (n != len);
+if (n != len)
+return 1;
+
+ return 0;
 }
