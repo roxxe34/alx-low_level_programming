@@ -1,25 +1,25 @@
 #include <stdlib.h>
 #include <time.h>
-/* i dont i need more headers */
-
+#include <stdio.h>
 /*
- * Positive anything is better than negative nothing 
+*Positive anything is better than negative nothing
 */
 int main(void)
+/*
+* this code is in betty
+*/
 {
-  int n;
-
-  srand(time(0));
-  n = rand() - RAND_MAX / 2;
-
-  if(n>0){
-    printf("is positive\n")
-      }
-  if(n=0){
-    printf("is zero\n")
-      }
-  if(n<0){
-    printf("is negative\n")
-      }
-  return (0);
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+{
+if (n > 0)
+{
+printf("%ld is positive\n");
+if (n == 0)
+printf("%ld is zero\n");
+if (n < 0)
+printf("%ld is negative\n");
+}
+return (0);
 }
