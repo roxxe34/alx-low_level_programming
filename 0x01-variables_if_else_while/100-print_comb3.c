@@ -19,6 +19,10 @@ if (x != 8 || y != 9)
 putchar(',');
 putchar(' ');
 }
+else
+{
+putchar('\n');
+}
 }
 }
 return (0);
