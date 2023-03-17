@@ -2,9 +2,9 @@
 /**
  * main - entry point
  *
- * print single digit numbers
+ * print all single digit numbers
  *
- * return 0 if succeful
+ * Return: Always 0
  */
 int main(void)
 {
