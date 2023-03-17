@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main entry point
+ * main - entry point
  *
  * print single digit numbers
  *
- * return 0
+ * return 0 if succeful
  */
 int main(void)
 {
@@ -13,6 +13,6 @@ for (i = 0; i < 10; i++)
 {
 printf("%d", i);
 }
-printf ("\n");
+printf("\n");
 return (0);
 }
