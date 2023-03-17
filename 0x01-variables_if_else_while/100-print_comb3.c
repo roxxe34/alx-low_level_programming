@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * maxn - Prints all possible combinations of two different dxgxts,
- *   xn ascendxng order, separated by a comma followed by a space.
+ * main - Prints all possible combinations of two different dxgxts,
+ *   in ascending order, separated by a comma followed by a space.
  *
  * Return: Always 0.
  */
