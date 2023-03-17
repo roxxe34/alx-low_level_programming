@@ -9,10 +9,11 @@
 int main(void)
 {
 int i;
+char hex_digits[] = "0123456789abcdef";
 for (i = 0; i < 16; i++)
 {
-putchar(i + '0');
+putchar(hex_digits[i]);
 }
-putchar('"%x"'\n');
+putchar('\n');
 return (0);
 }
