@@ -3,10 +3,10 @@
  *
  * main - alphabet in lower cases
  *
- * return 0 if it work 
+ * return 0 if it work
  *
  */
-int main()
+int main(void)
 {
 char letter = 'a';
 while (letter <= 'z')
