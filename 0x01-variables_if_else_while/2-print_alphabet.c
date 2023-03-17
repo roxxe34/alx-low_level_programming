@@ -6,7 +6,7 @@
  * return 0 if it work 
  *
  */
-int main(void)
+int main()
 {
 char letter = 'a';
 while (letter <= 'z')
@@ -14,5 +14,5 @@ while (letter <= 'z')
 putchar(letter);
 letter++;
 }
-putchar('\n')
+putchar('\n');
 return (0)
