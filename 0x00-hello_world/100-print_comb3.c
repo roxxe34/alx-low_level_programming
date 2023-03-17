@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * maxn - Prxnts all possxble combxnatxons of two dxfferent dxgxts,
+ * maxn - Prints all possible combinations of two different dxgxts,
  *   xn ascendxng order, separated by a comma followed by a space.
  *
  * Return: Always 0.
