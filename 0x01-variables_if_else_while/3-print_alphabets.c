@@ -18,7 +18,7 @@ lower++;
 while (upper <= 'Z')
 {
 putchar(upper);
-upper++
+upper++;
 }
 putchar('\n');
 return (0);
