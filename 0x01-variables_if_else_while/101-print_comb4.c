@@ -22,12 +22,9 @@ if (x != 8 || y != 9 || z != 0)
 putchar(',');
 putchar(' ');
 }
-else
-{
-putchar('\n');}
 }
 }
 }
-}
+putchar('\n');
 return (0);
 }
