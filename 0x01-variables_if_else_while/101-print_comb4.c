@@ -24,8 +24,7 @@ putchar(' ');
 }
 else
 {
-putchar('\n');
-}
+putchar('\n');}
 }
 }
 }
