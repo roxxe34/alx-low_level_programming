@@ -2,17 +2,20 @@
 /**
  * print_alphabet - Entry point
  *
- * alphabet in lower case
+ * alphabet in lower casex10
  *
  * return 0
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-char letter = 'a';
-while (letter <= 'z')
+char x
+int y = 0;
+while (y <= 9)
 {
-putchar(letter);
-letter++;
+for (x = 'a' ; x <= 'z' ; x++)
+{
+_putchar(x);
 }
-putchar('\n');
+_putchar('\n');
+}
 }
