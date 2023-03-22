@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - Entry point
+ * function print_alphabet_x10 - Entry point
  *
  * alphabet in lower casex10
  *
@@ -12,7 +12,7 @@ char x;
 int y = 0;
 while (y <= 9)
 {
-for (x= 'a' ; x <= 'z' ; x++)
+for (x = 'a' ; x <= 'z' ; x++)
 {
 _putchar(x);
 }
