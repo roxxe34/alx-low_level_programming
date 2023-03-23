@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _isdigit - checks for a digit 
+ * int _isdigit - checks for a digit
  * @c: carrier integer variable
  * Return: 1 if true, 0 if false
  */
