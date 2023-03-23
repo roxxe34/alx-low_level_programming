@@ -5,6 +5,7 @@
  * return 0
  */
 void print_diagonal(int n)
+{
 int a = 0, j;
 while (a < n && n > 0)
 {
