@@ -3,7 +3,7 @@
  * mul - multuply two integers
  * @a:variable
  * @b: variable
- * return a * b
+ * Return: a * b
  */
 int mul(int a, int b)
 {
