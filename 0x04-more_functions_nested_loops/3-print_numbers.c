@@ -5,12 +5,13 @@
  *
  * return 0
  */
-void print_numbers(void);
+void print_numbers(void)
 {
-int i;
-while (i = 0 ; i < 10; i++)
+char i = 0;
+while (i < 10)
 {
-_putchar("%d", i);
+_putchar(i+'0');
+i++;
 }
 _putchar('\n');
 }
