@@ -6,14 +6,19 @@
  *
  * Return: Always 0
  */
-int main(void)
+int main (void)
 {
-int i;
-char hex_digits[] = "0123456789abcdef";
-for (i = 0; i < 16; i++)
+char c = 48;
+char d = 97;
+while (c <= 57)
 {
-putchar(hex_digits[i]);
+putchar(c);
+c++;
+}
+while (d <= 102)
+{
+putchar(d);
+d++;
 }
 putchar('\n');
-return (0);
 }
