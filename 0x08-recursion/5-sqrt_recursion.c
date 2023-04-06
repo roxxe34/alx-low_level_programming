@@ -2,9 +2,8 @@
 
 /**
 * _sqrt_recursion - returns the natural square root of a number
-* @n: number 
+* @n: number
 * _sqrt - returns the square root of a number
-* @x: squared number
 * Return: the square root of n
 */
 int _sqrt_recursion(int n)
@@ -20,6 +19,7 @@ int _sqrt_recursion(int n)
  * @x: squared number
  * Return: the square root of n
  */
+
 int _sqrt(int n, int x)
 {
 	if (n > x / 2)
