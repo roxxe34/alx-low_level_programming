@@ -37,4 +37,5 @@ if (*head == NULL)
 {
 *head = new_node2;
 }
+return (new_node2);
 }
