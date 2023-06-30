@@ -36,6 +36,11 @@ new_node2->next = NULL;
 if (*head == NULL)
 {
 *head = new_node2;
+return (new_node2);
 }
+tmp = *head;
+while (tmp->next)
+tmp = tmp->next;
+tmp->next = new_node2;
 return (new_node2);
 }
