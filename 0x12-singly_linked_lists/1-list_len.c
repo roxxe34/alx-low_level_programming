@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 /**
  * list_len - returns the number of elements in a linked
  * @h: A pointer to the head of the list
