@@ -38,9 +38,14 @@ if (*head == NULL)
 *head = new_node2;
 return (new_node2);
 }
-tmp = *head;
+else
+{
+list_t *tmp = *head;
 while (tmp->next)
+{
 tmp = tmp->next;
+}
 tmp->next = new_node2;
+}
 return (new_node2);
 }
