@@ -15,5 +15,10 @@ newnode->n = n;
 newnode->next = NULL;
 newnode->next = *head;
 *head = newnode;
+if (newnode == NULL)
+{
+return (NULL);
+}
+else
 return (newnode);
 }
