@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_nodeint - returns the number of elements in a linked
- * @h: A pointer to the head of the list
- *
- * Return: new node
+ * add_nodeint - adds a new node at the beginning
+ * @head: A pointer to the head of the list
+ * @n: integer variable
+ * Return: return the new node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
