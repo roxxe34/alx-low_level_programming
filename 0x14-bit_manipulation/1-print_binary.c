@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _power - calculate (base and power)
- * @base: base of the exponet
- * @pow: power of the exponet
+ * _power - calculate power and base
+ * @base: base of the expo
+ * @pow: power of the expo
  * Return: value of base and power
  */
 unsigned long int _power(unsigned int base, unsigned int pow)
@@ -17,7 +17,7 @@ unsigned long int _power(unsigned int base, unsigned int pow)
 }
 /**
  * print_binary - prints the binary representation of a number
- * @n: num of prented
+ * @n: number of prented
  * Return: void
  */
 void print_binary(unsigned long int n)
