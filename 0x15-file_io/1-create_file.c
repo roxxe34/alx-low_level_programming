@@ -25,7 +25,7 @@ if (truncate_result == -1)
 close(file);
 return (-1);
 }
-while(text_content[len] != '\0')
+while (text_content[len] != '\0')
 {
 len++;
 }
@@ -38,7 +38,7 @@ close(file);
 return (-1);
 }
 }
-else 
+else
 {
 	char buffer[1] = "";
 	bytes_written = write(file, buffer, sizeof(buffer));
