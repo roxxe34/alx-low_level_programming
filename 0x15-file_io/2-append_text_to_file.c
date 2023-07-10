@@ -1,12 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-  * append_text_to_file - a function that reads a text file and prints it
-  * @filename: A pointer to the name of the file.
-  * @letters: The number of letters the
-  *           function should read and print.
+  * create_file - a function that create a file
+  * @text_content: the content of file
+  * @filename: namefile
   *
-  * Return: 1 if successed.
+  * Return: 1 if success
   */
 int append_text_to_file(const char *filename, char *text_content)
 {
