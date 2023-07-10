@@ -24,7 +24,7 @@ if (filename == NULL)
 	}
 	readfile = read(file, buffer, letters);
 	print = write(STDOUT_FILENO, buffer, letters);
-if (file == -1 || readfile == -1 || print == -1)
+if (file == -1 || readfile == -1 || print == -1 || print != readfile)
 {
 	free(buffer);
 	return (0);
