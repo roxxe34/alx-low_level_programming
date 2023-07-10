@@ -19,7 +19,6 @@ if (file == -1)
 {
 return (-1);
 }
-truncate_result = truncate(filename, 0);
 if (truncate_result == -1)
 {
 close(file);
