@@ -10,13 +10,13 @@ int create_file(const char *filename, char *text_content)
 {
 	int len = 0;
 	char buffer[1] = "";
+	int crfile;
+	ssize_t fwrite;
+	ssize_t truncate;
 if (filename == NULL)
 {
 	return (-1);
 }
-	int crfile;
-	ssize_t fwrite;
-	ssize_t truncate;
 	crfile = open(filename, O_WRONLY | O_CREAT, 0600);
 if(crfile == -1)
 {
