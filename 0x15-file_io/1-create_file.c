@@ -6,42 +6,42 @@
   *
   * Return: 1 if success
   */
-int create_file(const char *filename, char *text_content)
-{
-	int len = 0;
-	char buffer[1] = "";
-	int crfile;
-	ssize_t fwrite;
+int create_file(const char *filename, char *text_content) {
+ssize_t bytes_written;
+int truncate_result;
+int file;
 if (filename == NULL)
 {
-	return (-1);
+return -1;
 }
-	crfile = open(filename, O_WRONLY | O_CREAT, 0600);
-if(crfile == -1)
+file = open(filename, O_WRONLY | O_CREAT, 0600);
+if (file == -1) {
+return -1;
+}
+truncate_result = truncate(filename, 0);
+if (truncate_result == -1)
 {
-	return (-1);
+close(file);
+return -1;
 }
-while(text_content[len] != '\0')
+if (text_content != NULL)
 {
-	len++;
-}
-
-if(text_content != NULL)
+bytes_written = write(file, text_content, len);
+if (bytes_written == -1)
 {
-	fwrite = write(STDOUT_FILENO, text_content, len);
-if (fwrite == -1)
+close(file);
+return -1;
+}
+}
+else 
 {
-	close(crfile);
-	return (-1);
+	char buffer[1] = "";
+	bytes_written = write(file, buffer, sizeof(buffer));
+	if (bytes_written == -1) {
+	close(file);
+	return -1;
 }
 }
-else
-{
-fwrite = write(STDOUT_FILENO, buffer, sizeof(buffer));
-if (fwrite == -1)
-close(crfile);
-return (-1);
-}
-close(crfile);
-return (1);
+close(file);
+return 1;
 }
