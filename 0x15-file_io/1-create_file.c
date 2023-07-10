@@ -19,12 +19,12 @@ if (file == -1)
 {
 return (-1);
 }
-while (text_content[len] != '\0')
-{
-len++;
-}
 if (text_content != NULL)
 {
+for (len = 0; text_content[len];)
+len++;
+}
+
 bytes_written = write(file, text_content, len);
 if (bytes_written == -1 || bytes_written < len)
 {
