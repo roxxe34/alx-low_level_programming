@@ -17,7 +17,8 @@ if (filename == NULL)
 return (-1);
 }
 file = open(filename, O_WRONLY | O_CREAT, 0600);
-if (file == -1) {
+if (file == -1)
+{
 return (-1);
 }
 truncate_result = truncate(filename, 0);
@@ -28,7 +29,7 @@ return (-1);
 }
 while(text_content[len] != '\0')
 {
-    len++;
+len++;
 }
 if (text_content != NULL)
 {
