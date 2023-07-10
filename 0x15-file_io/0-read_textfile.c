@@ -14,7 +14,7 @@ if (filename == NULL)
 {
 return (0);
 }
-int file = open(filename, O_RDONLY);
+ssize_t file = open(filename, O_RDONLY);
 char *buffer = malloc(letters);
 ssize_t readfile = read(file, buffer, letters);
 ssize_t print = write(STDOUT_FILENO, buffer, letters);
