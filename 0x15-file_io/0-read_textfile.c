@@ -14,10 +14,11 @@ if (filename == NULL)
 {
 	return (0);
 }
-	ssize_t file = open(filename, O_RDONLY);
+	ssize_t file, readfile, print;
+	file = open(filename, O_RDONLY);
 	char *buffer = malloc(letters);
-	ssize_t readfile = read(file, buffer, letters);
-	ssize_t print = write(STDOUT_FILENO, buffer, letters);
+	readfile = read(file, buffer, letters);
+	print = write(STDOUT_FILENO, buffer, letters);
 if (file == -1 || readfile == -1 || print == -1)
 {
 	free(buffer);
