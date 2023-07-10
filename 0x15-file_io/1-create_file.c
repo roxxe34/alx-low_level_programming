@@ -19,11 +19,6 @@ if (file == -1)
 {
 return (-1);
 }
-if (truncate_result == -1)
-{
-close(file);
-return (-1);
-}
 while (text_content[len] != '\0')
 {
 len++;
