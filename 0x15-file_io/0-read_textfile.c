@@ -10,25 +10,23 @@
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    ssize_t file, fread, fwrite;
-    char *buffer;
-
-    buffer = malloc(sizeof(char) * letters);
-    if (buffer == NULL)
-        return (0);
-    if (filename == NULL)
-        return (0);
-
-    file = open(filename, O_RDONLY);
-    if (file == -1)
-        return (0);
-    fread = read(file, buffer, letters);
-    if (fread == -1)
-        return (0);
-    fwrite = write(STDOUT_FILENO, buffer, fread);
-    if (fwrite == -1)
-        return (0);
-    close(file);
-    free(buffer);
-    return (fwrite);
+ssize_t file, fread, fwrite;
+char *buffer;
+buffer = malloc(sizeof(char) * letters);
+if (buffer == NULL)
+return (0);
+if (filename == NULL)
+return (0);
+file = open(filename, O_RDONLY);
+if (file == -1)
+return (0);
+fread = read(file, buffer, letters);
+if (fread == -1)
+return (0);
+fwrite = write(STDOUT_FILENO, buffer, fread);
+if (fwrite == -1)
+return (0);
+close(file);
+free(buffer);
+return (fwrite);
 }
