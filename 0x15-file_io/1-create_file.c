@@ -31,7 +31,6 @@ if (bytes_written == -1 || bytes_written < len)
 close(file);
 return (-1);
 }
-}
 close(file);
 return (1);
 }
