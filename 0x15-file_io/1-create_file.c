@@ -31,7 +31,7 @@ if(text_content != NULL)
 	fwrite = write(STDOUT_FILENO, text_content, len);
 if (fwrite == -1)
 {
-	close(filename);
+	close(crfile);
 	return (-1);
 }
 }
@@ -39,9 +39,9 @@ else
 {
 fwrite = write(STDOUT_FILENO, buffer, sizeof(buffer));
 if (fwrite == -1)
-close(filename);
+close(crfile);
 return (-1);
 }
-close(filename);
+close(crfile);
 return (1);
 }
