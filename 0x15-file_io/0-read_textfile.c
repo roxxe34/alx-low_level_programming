@@ -18,6 +18,10 @@ if (filename == NULL)
 }
 	file = open(filename, O_RDONLY);
 	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+	{
+	return (0);
+	}
 	readfile = read(file, buffer, letters);
 	print = write(STDOUT_FILENO, buffer, letters);
 if (file == -1 || readfile == -1 || print == -1)
