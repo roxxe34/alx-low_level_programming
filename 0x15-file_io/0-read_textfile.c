@@ -12,15 +12,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 if (filename == NULL)
 {
-return (0);
+	return (0);
 }
-ssize_t file = open(filename, O_RDONLY);
-char *buffer = malloc(letters);
-ssize_t readfile = read(file, buffer, letters);
-ssize_t print = write(STDOUT_FILENO, buffer, letters);
+	ssize_t file = open(filename, O_RDONLY);
+	char *buffer = malloc(letters);
+	ssize_t readfile = read(file, buffer, letters);
+	ssize_t print = write(STDOUT_FILENO, buffer, letters);
 if (file == -1 || readfile == -1 || print == -1)
 {
-return (0);
+	free(buffer);
+	return (0);
 }
 free(buffer);
 close(file);
