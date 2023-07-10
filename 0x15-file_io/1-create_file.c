@@ -26,7 +26,7 @@ len++;
 if (text_content != NULL)
 {
 bytes_written = write(file, text_content, len);
-if (bytes_written == -1)
+if (bytes_written == -1 || bytes_written < len)
 {
 close(file);
 return (-1);
