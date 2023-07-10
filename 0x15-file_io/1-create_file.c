@@ -37,15 +37,6 @@ close(file);
 return (-1);
 }
 }
-else
-{
-	char buffer[1] = "";
-	bytes_written = write(file, buffer, sizeof(buffer));
-	if (bytes_written == -1) {
-	close(file);
-	return (-1);
-}
-}
 close(file);
 return (1);
 }
