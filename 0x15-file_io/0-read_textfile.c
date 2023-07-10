@@ -16,8 +16,10 @@ if (filename == NULL)
 return (0);
 }
 char *buffer = malloc(letters);
-ssize_t Read = read(file, buffer, letters);
+ssize_t readfile = read(file, buffer, letters);
 ssize_t print = write(STDOUT_FILENO, buffer, letters);
+if (file == -1 || readfile == -1 || print == -1)
+return (0);
 free(buffer);
 close(file);
 return (print);
