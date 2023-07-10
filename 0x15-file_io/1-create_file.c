@@ -12,7 +12,6 @@ int create_file(const char *filename, char *text_content)
 	char buffer[1] = "";
 	int crfile;
 	ssize_t fwrite;
-	ssize_t truncate;
 if (filename == NULL)
 {
 	return (-1);
@@ -22,12 +21,6 @@ if(crfile == -1)
 {
 	return (-1);
 }
-	truncate = truncate(filename, 0);
-	if (truncate == -1)
-	{
-	close(filename);
-	return (-1);
-	}
 while(text_content[len] != '\0')
 {
 	len++;
