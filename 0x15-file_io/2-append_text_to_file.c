@@ -25,7 +25,7 @@ for (len = 0; text_content[len];)
 len++;
 }
 fwrite = write(file, text_content,  len);
-if (bytes_written == -1 || bytes_written < len)
+if (fwrite == -1 || fwrite < len)
 {
 close(file);
 return (-1);
