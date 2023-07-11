@@ -13,7 +13,7 @@ void print_data_encoding(unsigned char *e_ident);
 void print_elf_version(unsigned char *e_ident);
 void print_os_abi(unsigned char *e_ident);
 void print_abi_version(unsigned char *e_ident);
-void print_elf_type(unsigned int e_type, unsigned char *e_ident);
+void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry_point(unsigned long int e_entry, unsigned char *e_ident);
 void close_file(int fd);
 
@@ -301,7 +301,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	print_elf_version(header->e_ident);
 	print_os_abi(header->e_ident);
 	print_abi_version(header->e_ident);
-	print_elf_type(header->e_type, header->e_ident);
+	print_type(header->e_type, header->e_ident);
 	print_entry_point(header->e_entry, header->e_ident);
 
 	free(header);
