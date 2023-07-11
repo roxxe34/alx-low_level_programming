@@ -86,6 +86,7 @@ int main(int argc, char *argv[])
 {
 const char *file_from;
     const char *file_to;
+	ssize_t result;
 
     if (argc != 3)
     {
@@ -96,7 +97,7 @@ const char *file_from;
     file_from = argv[1];
     file_to = argv[2];
 
-    ssize_t result = cp(file_from, file_to);
+    result = cp(file_from, file_to);
 
     if (result == -1)
     {
