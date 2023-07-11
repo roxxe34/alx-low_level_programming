@@ -261,7 +261,7 @@ void close_elf(int elf)
 
 /**
  * main - Displays the information contained in the
- *        ELF header at the start of an ELF file.
+ *        ELF header at the start of  ELF file.
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
