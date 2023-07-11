@@ -84,21 +84,24 @@ ssize_t cp(const char *file_from, const char *file_to)
  */
 int main(int argc, char *argv[])
 {
-	if (argc != 3)
-	{
-		print_error("Usage: cp file_from file_to");
-		return (97);
-	}
+const char *file_from;
+    const char *file_to;
 
-	const char *file_from = argv[1];
-	const char *file_to = argv[2];
+    if (argc != 3)
+    {
+        print_error("Usage: cp file_from file_to");
+        return (97);
+    }
 
-	ssize_t result = cp(file_from, file_to);
+    file_from = argv[1];
+    file_to = argv[2];
 
-	if (result == -1)
-	{
-		return (99);
-	}
+    ssize_t result = cp(file_from, file_to);
 
-	return (0);
+    if (result == -1)
+    {
+        return (99);
+    }
+
+    return (0);
 }
