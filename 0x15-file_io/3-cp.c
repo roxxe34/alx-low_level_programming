@@ -8,9 +8,8 @@
  */
 void print_error(const char *message)
 {
-	dprintf(STDERR_FILENO, "Error: %s\n", message);
+dprintf(STDERR_FILENO, "Error: %s\n", message);
 }
-
 /**
  * cp - Copy the content of a file to another file
  * @file_from: The source file
