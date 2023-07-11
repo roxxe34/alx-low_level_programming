@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
 #include "main.h"
 
 /**
@@ -92,10 +95,10 @@ int main(int argc, char *argv[])
 
 	ssize_t result = cp(file_from, file_to);
 
-if (result == -1)
-{
-return (99);
-}
+	if (result == -1)
+	{
+		return (99);
+	}
 
-return (0);
+	return (0);
 }
